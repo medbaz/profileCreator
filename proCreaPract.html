@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="proCreaPract.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="ProfilCrearor">
+      <div class="Header">
+        Join our comunity along with <mark> 690k+</mark> of others and start
+        <mark> having fun . </mark>
+      </div>
+      <div class="InfoHandler">
+        <div class="first-section">
+          <div class="fullName">
+            <form action="">
+              <label for="fullname">Full name</label>
+              <input type="text" name="fullname" id="fullname" placeholder="Enter your full name" focus="none" />
+            </form>
+          </div>
+          <div class="fullName" id="lastOne">
+            <form action="">
+              <label for="fullname">Email adress </label>
+              <input type="email" name="fullname" placeholder="Enter your full name" focus="none" />
+            </form>
+          </div>
+        </div>
+        <div class="pic-textarea">
+          <div class="ProfilePicture">
+            <div class="image">
+              <div class="overly"></div>
+              <img id="img" alt="avatar" src="7c309a70-bc93-4603-8d3b-9d4cd9bf75b2.jpg" />
+            </div>
+            <p>Shouse your avatar</p>
+            <input type="file" name="avatar" id="avatar" accept=".jpg, .png, .jpeg" onchange="insertImg(event)" />
+            <label for="avatar">click here</label>
+          </div>
+          <div class="bio">
+            <label for="myBio">Your bio hear</label><textarea name="myBio" id="myBio" cols="32" rows="10"></textarea>
+          </div>
+        </div>
+        <div class="birthday">
+          <label for="birthday">Birthday</label>
+          <div class="selections">
+            <select name="birthday" id="days"></select>
+            <select name="birthday" id="months"></select>
+            <select name="birthday" id="years"></select>
+          </div>
+        </div>
+        <div class="theLastPart">
+          <div class="videoContainer">
+            <div class="Audio">
+              <audio id="audio-holder"></audio>
+              <span class="material-icons-round" id="play-icon">play_circle_outline</span>
+            </div>
+            <input type="file" id="audioFile" name="audioFile" accept=".mp3" onchange="replaceAudio(event)" />
+            <p>Choose your audio</p>
+            <label for="audioFile">click here</label>
+          </div>
+          <div class="height">
+            <div class="setTheHeight">
+              <input type="range" list="slideValues" id="slide" name="slide" min="0" max="200" />
+            </div>
+            <p>Height</p>
+            <p id="plotHeightValue">200</p>
+          </div>
+          <div class="weight">
+            <p>Weight</p>
+            <div class="setTheWeight">
+              <input type="number" min="15" max="30" value="20" id="weightValue" name="weightValue" readonly />
+              <div class="number-button">
+                <button onclick="attributValue(this)" class="increment">
+                  +
+                </button>
+                <button onclick="attributValue(this)" class="decriment">
+                  -
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <button class="submit" id="submit">Submet</button>
+        </div>
+      </div>
+    </div>
+    <div class="Profiles-container" id="Profiles-container">
+      <p class="alert" id="alert"></p>
+      <p class="header">Creat as many profiles as you want</p>
+      <!-- class profiles list should be removed -->
+      <div id="Profiles-list">
+        <article>
+          <!-- <div class="Profile-bar">
+                <div class="Profile-pic"><img id="profile-img" src="7c309a70-bc93-4603-8d3b-9d4cd9bf75b2.jpg" alt=""></div>
+                <div class="Profile-text">
+                  <h1>Mohamed Bazber</h1>
+                  <p>Hi guys this is my profile creator project 
+feel free to open and enjoy using it .</p>
+                  <button class="show-profile-btn" >Show profile</button>
+                </div>
+              </div> -->
+        </article>
+      </div>
+      <button class="clear-btn" id="clear-btn">Clear profiles</button>
+    </div>
+  </div>
+</body>
+<script src="proCreaPract.js"></script>
+
+</html>
+
+<!-- <source  src="DADA - Arwass ( Official Audio ).mp3"> -->
