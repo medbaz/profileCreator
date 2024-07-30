@@ -31,16 +31,7 @@ function monthInsert() {
     barMonths.appendChild(option);
   }
 
-  //     let currMonth = barMonths.value;
-  //     function daySelect(currMonth) {
-  //         let dayNum;
-  //           if (currMonth === "December" || currMonth == "November" || currMonth == "October" ||
-  //            currMonth == "September") {
-  //             alert("dlkfjhv");
-  //           }
-  //         }
-  //         daySelect(currMonth);
-  //   alert(barMonths.value)
+
 
   barMonths.addEventListener("input", extractMonth);
   let dayNum = function () {
